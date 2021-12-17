@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="{{ url_for('static', filename='js/test.js') }}"></script> -->
+    <title> {% block title %} {% endblock title %} - MyTodo</title>
+</head>
+
+<body>
+    <center>
+        <h1 class="display-3 fw-bold fst-italic">land records blockchain ledger</h1>
+    </center>
+
+
+    <div class="d-flex justify-content-evenly my-5">
+        <button type="button" method="GET" onclick="location.href='http://192.168.1.112:5000/'"
+            class="btn btn-outline-dark btn-lg">Home</button>
+        <button type="button" method="GET" onclick="location.href='http://192.168.1.112:5000/get_chain'"
+            class="btn btn-outline-dark btn-lg">Chain</button>
+        <button type="button" method="GET" onclick="location.href='http://192.168.1.112:5000/input_data'"
+            class="btn btn-outline-dark btn-lg">Input Data</button>
+        <button type="button" method="GET" onclick="location.href='http://192.168.1.112:5000/is_valid'"
+            class="btn btn-outline-dark btn-lg">Validity Check</button>
+        <!-- <button type="button" method="GET" onclick="location.href='http://192.168.1.112:5000/update'" class="btn btn-outline-dark btn-lg">Update block</button> -->
+
+        <!-- onclick="location.href='http://192.168.1.112:5000/'" -->
+    </div>
+
+
+    {% block body %}
+
+    <h3>yaha likhenge gyan</h3>
+
+    {% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Home{% endblock title %}
+{% block body %}
+
+<div class="container my-3">
+  <h2>Block creation</h2>
+  <form action="/mine_block" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Author</label>
+      <input type="text" class="form-control" name="author" id="title" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">land registration id</label>
+      <input type="text" class="form-control" name="content" id="desc">
+    </div>
+
+    <button type="submit" class="btn btn-dark">Mine Block</button>
+  </form>
+</div>
+
+{% endblock body %}
